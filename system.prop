@@ -1,0 +1,7 @@
+#
+# System Properties for Verizon LG V20
+#
+
+# Radio
+ro.telephony.default_network=10
+telephony.lteOnCdmaDevice=1
