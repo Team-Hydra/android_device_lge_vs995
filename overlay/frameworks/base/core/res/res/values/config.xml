@@ -44,14 +44,12 @@
         <item>mobile_emergency,15,0,2,-1,true</item>
         <item>mobile_xcap,23,0,2,-1,true</item>
         <item>mobile_vtims,28,0,2,-1,true</item>
+    </string-array>
 
     <!-- The RadioAccessFamilies supported by the device.
          Empty is viewed as "all".  Only used on devices which
          don't support RIL_REQUEST_GET_RADIO_CAPABILITY
          format is UMTS|LTE|... -->
     <string translatable="false" name="config_radio_access_family">LTE|CDMA|EVDO|GSM|WCDMA</string>
-    </string-array>
-
-
 
 </resources>
