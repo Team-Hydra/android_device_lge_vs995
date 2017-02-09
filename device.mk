@@ -22,9 +22,6 @@ $(call inherit-product-if-exists, vendor/lge/vs995/vs995-vendor.mk)
 # common v20
 $(call inherit-product, device/lge/v20-common/v20.mk)
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_vzw_us.conf:system/etc/sensors/sensor_def_variable.conf
