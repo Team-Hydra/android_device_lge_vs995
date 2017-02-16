@@ -19,6 +19,29 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
+    <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
+         [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH or
+         [1,4,7,9] for TYPE_WIFI, TYPE_MOBILE_DUN, TYPE_BLUETOOTH and TYPE_ETHERNET-->
+    <integer-array translatable="false" name="config_tether_upstream_types">
+        <item>1</item>
+        <item>4</item>
+        <item>7</item>
+        <item>9</item>
+    </integer-array>
+
+    <!-- If the DUN connection for this CDMA device supports more than just DUN -->
+    <!-- traffic you should list them here. -->
+    <!-- If this device is not CDMA this is ignored.  If this list is empty on -->
+    <!-- a DUN-requireing CDMA device, the DUN APN will support -->
+    <!-- just DUN. -->
+    <string-array translatable="false" name="config_cdma_dun_supported_types">
+        <item>"default"</item>
+        <item>"dun"</item>
+        <item>"mms"</item>
+        <item>"supl"</item>
+    </string-array>
+
     <!-- The RadioAccessFamilies supported by the device.
          Empty is viewed as "all".  Only used on devices which
          don't support RIL_REQUEST_GET_RADIO_CAPABILITY
